@@ -57,7 +57,7 @@ public class Common {
 		Resources.Theme theme = activity.getTheme();
 		theme.resolveAttribute(android.R.attr.textColorPrimary, typedValue, true);
 		@ColorRes int colorRes = (typedValue.resourceId != 0) ? typedValue.resourceId : typedValue.data;
-		@ColorInt int colorId = ContextCompat.getColor(activity, colorRes);
+		@ColorInt int colorId = ContextCompat.getColor(activity, R.color.textColorPrimary);
 		return colorId;
 	}
 
